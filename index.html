@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Paúl Dávila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="slider" role="region" aria-label="Páginas del portafolio">
+        <button class="nav prev" aria-label="Página anterior" data-dir="-1">&#x2190;</button>
+        <div class="viewport">
+          <div class="pages" id="pages">
+            <section class="page" aria-label="Portafolio Paúl Dávila">
+              <div class="page-inner">
+                <h2>Portafolio Paúl Dávila</h2>
+                <p>Bienvenido a mi portafolio. Usa las flechas para navegar.</p>
+              </div>
+            </section>
+
+            <section class="page page--full page--weather" aria-label="Weather Helper">
+              <div class="page-inner">
+                <div class="project-grid">
+                  <img class="project-img project-img--tall" src="img/2.png" alt="Weather Helper - pantalla principal" />
+                  <div class="project-text">
+                    <h2>Weather Helper</h2>
+                    <p>App móvil desarrollada con Flutter + Dart que permite buscar el clima en distintas ciudades usando la API pública de Open-Meteo (sin API key).</p>
+                    <a class="project-link" href="https://github.com/BaphomeT-T/weather_helper" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="page page--full" aria-label="PoliMarketPlace">
+              <div class="page-inner">
+                <div class="project-grid">
+                  <img class="project-img" src="img/1.png" alt="PoliMarketPlace - captura del marketplace" />
+                  <div class="project-text">
+                    <h2>PoliMarketPlace</h2>
+                    <p>Página web hecha con Django que funciona como un marketplace. Muestra artículos en tu zona, permite subir artículos para vender y tiene chat en tiempo real con WebSockets entre compradores y vendedores según el producto.</p>
+                    <a class="project-link" href="https://github.com/BaphomeT-T/PoliMarketplace" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="page page--full" aria-label="Fooly Scape Room">
+              <div class="page-inner">
+                <div class="project-grid">
+                  <img class="project-img" src="img/3.png" alt="Fooly Scape Room - juego de escape room" />
+                  <div class="project-text">
+                    <h2>Fooly Scape Room</h2>
+                    <p>Juego de fiesta inmersivo temático de Halloween desarrollado con Python que usa Twilio para llamar a los celulares de los jugadores y darles acertijos o retos que al completarse revelan un código para pasar a la siguiente ronda.</p>
+                    <a class="project-link" href="https://github.com/BaphomeT-T/Fooly_Scape_Room" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <button class="nav next" aria-label="Página siguiente" data-dir="1">&#x2192;</button>
+      </main>
+
+      <footer class="site-footer">
+        <div class="dots" id="dots" aria-label="Indicador de páginas" role="tablist"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
